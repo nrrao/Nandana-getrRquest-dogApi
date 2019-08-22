@@ -9,10 +9,14 @@ function getDogImage(dogBreedName) {
 }
 
 function displayResults(responseJson) {
-  console.log(responseJson);
-  $('.results').html(
-    `<img src="${responseJson.message}" class="results-img">`
-  );
+  if (responseJson.status !== "success"){
+    $('.results').html('<p>Breed can not be found.Try Again!</p>');
+  }
+  else{
+    $('.results').html(
+      `<img src="${responseJson.message}" class="results-img">`
+    );
+  }
 }
 
 function watchForm() {
