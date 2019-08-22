@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Dog Images</title>
+</head>
+<body>
+    <form id="dog-api-test">
+        <label for="number-of-pics">Please enter the amount of dog pictures you would like to see (min: 1, max: 50):</label>
+        <input type="number" value="3" id="number-of-pics" min="1" max="50" required="required" />
+        <button type="submit" class="submit-button">Submit</button>
+    </form>
+    <h2>Look at these dogs!</h2>
+    <section class="results">
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
